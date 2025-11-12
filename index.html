@@ -7,97 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Zsombor Szocs</h1>
-        <p>Student | Developer | Problem Solver</p>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hello! I'm Zsombor, a passionate student developer looking for internship opportunities. I love building projects that solve real-world problems and continuously learning new technologies.</p>
-                    <p style="margin-top: 1rem;">I'm currently studying [Your Field/Major] and actively seeking internship opportunities where I can contribute my skills and grow as a developer.</p>
-                </div>
+    <div class="main-wrapper">
+        <header>
+            <div class="header-content">
+                <h1>Zsombor Szőcs</h1>
+                <p>Student | Developer | Problem Solver</p>
             </div>
-        </section>
+        </header>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <h3>Project 1 Name</h3>
-                    <p>Brief description of your project. What problem does it solve? What technologies did you use?</p>
-                    <div class="project-links">
-                        <a href="#" class="btn">View Demo</a>
-                        <a href="#" class="btn">GitHub</a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="container">
+            <section id="about">
+                <h2>About Me</h2>
+                
+                <div class="about-subsection">
+                    <h3>The Person</h3>
+                    <div class="subsection-content">
+                        <div class="subsection-text">
+                            <p>Greetings, my name is Zsombor Szőcs. I'm a third-year AI and Data Science student at Breda University of Applied Sciences, passionate about data engineering and data science. I love working with computer vision and deep learning in Python, there's something incredibly satisfying about teaching machines to see. I've also explored blockchain and web development projects, enjoying the diversity of challenges they bring. My approach is simple: understand the problem deeply before diving into solutions. Whether I'm building models, transforming data, or developing applications, I start with the "why." Outside of tech, I'm a team player shaped by years of American football, and I recharge through gym sessions, fishing, and being outdoors. Nature and teamwork keep me grounded and inspired.</p>
+                        </div>
+                        <div class="subsection-image">
+                            <img src="profile-picture.jpg" alt="Zsombor Szőcs">
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <h3>Project 2 Name</h3>
-                    <p>Brief description of your project. What problem does it solve? What technologies did you use?</p>
-                    <div class="project-links">
-                        <a href="#" class="btn">View Demo</a>
-                        <a href="#" class="btn">GitHub</a>
-                    </div>
+                <div class="about-subsection">
+                    <h3>The Journey</h3>
+                    <p>Born and raised in the heart of Budapest, Hungary, my fascination with tech and video games started early and set me on a clear path, I wanted an IT career. I attended an IT high school where I developed skills across programming in C++ and C#, web development with HTML and CSS, networking with Cisco, and mastering the Microsoft Office suite. When I moved to the Netherlands, I initially pursued International Business, drawn to its strategic aspects. But after earning my propedeutic diploma, I realized something was missing, I missed the hands-on work with IT tools and the creative problem-solving tech offered. That's when I shifted to AI and Data Science, recognizing AI as the core of the future and finding it endlessly fascinating. Since then, I've worked on impactful projects like training deep learning models with NPEC to detect and measure plant roots, and I'm currently collaborating with Specifix on segmenting wrist bones using computer vision. My five years playing American football in high school taught me the power of teamwork and strategy, lessons that not only shape how I approach every challenge but also made me a better team player in every project I tackle.</p>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <h3>Project 3 Name</h3>
-                    <p>Brief description of your project. What problem does it solve? What technologies did you use?</p>
-                    <div class="project-links">
-                        <a href="#" class="btn">View Demo</a>
-                        <a href="#" class="btn">GitHub</a>
-                    </div>
+                <div class="about-subsection">
+                    <h3>The Destination</h3>
+                    <p>Looking ahead, I aim to work as a Data Scientist and Engineer in a corporate environment, with a strong focus on computer vision. I'm drawn to projects that advance human wellbeing, whether that's in healthcare, where technology like our Specifix project accelerates surgical planning and reduces patient suffering, or in agriculture and environmental science, where AI can support sustainable farming and nature conservation. My vision is to contribute to solutions that genuinely benefit people, automating processes and solving real-world problems so society can move forward. I want my work to serve meaningful causes, projects where the impact is tangible and the purpose is clear. The future I'm building toward is one where technology doesn't just innovate for innovation's sake, but actively improves lives and addresses challenges that matter.</p>
                 </div>
+            </section>
+        </div>
 
-                <!-- Add more project cards as needed by copying the project-card div above -->
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills & Technologies</h2>
-            <div class="skills-list">
-                <span class="skill-tag">HTML/CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Git/GitHub</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Add Your Skills</span>
-                <!-- Add more skills by copying the skill-tag spans above -->
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a>
-                </div>
-                <div class="contact-item">
-                    <strong>GitHub:</strong> <a href="https://github.com/ZsomborSzocs234240" target="_blank">github.com/ZsomborSzocs234240</a>
-                </div>
-                <div class="contact-item">
-                    <strong>LinkedIn:</strong> <a href="#" target="_blank">Add your LinkedIn</a>
-                </div>
-            </div>
-        </section>
+        <footer>
+            <p>&copy; 2025 Zsombor Szőcs. All rights reserved.</p>
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2025 Zsombor Szocs. All rights reserved.</p>
-    </footer>
 </body>
 </html>
