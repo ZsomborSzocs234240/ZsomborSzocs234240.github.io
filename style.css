@@ -1,4 +1,7 @@
 /* Reset and Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -48,6 +51,9 @@ header {
     letter-spacing: 2px;
     color: #4a7c59;
     text-transform: uppercase;
+    font-family: 'Audiowide', sans-serif;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #4a7c59;
 }
 
 .header-content p {
@@ -55,7 +61,8 @@ header {
     font-weight: 300;
     letter-spacing: 1px;
     font-style: italic;
-    color: #555;
+    color: #2d5a3d;
+    font-family: 'Audiowide', sans-serif;
 }
 
 /* Navigation Styles */
@@ -77,6 +84,7 @@ nav a {
     border-radius: 5px;
     transition: background-color 0.3s;
     font-weight: 500;
+    font-family: 'Orbitron', sans-serif;
 }
 
 nav a:hover {
@@ -117,8 +125,11 @@ section:last-child {
 h2 {
     color: #4a7c59;
     margin-bottom: 1.5rem;
-    font-size: 2rem;
-    padding-bottom: 0.5rem;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: 3px solid #4a7c59;
 }
 
 /* About Section */
@@ -142,14 +153,28 @@ h2 {
 
 .about-subsection h3 {
     color: #4a7c59;
-    font-size: 1.4rem;
-    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
     font-weight: 600;
+    margin-left: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #4a7c59;
+}
+
+/* Align My Journey title to the right */
+.about-subsection:nth-child(3) h3 {
+    text-align: right;
+    margin-right: 1rem;
+    margin-left: 0;
 }
 
 .about-subsection p {
     line-height: 1.8;
     color: #555;
+    text-align: justify;
+    font-family: 'Oxanium', sans-serif;
 }
 
 .subsection-content {
@@ -160,6 +185,11 @@ h2 {
 
 .subsection-text {
     flex: 1;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 2px solid rgba(74, 124, 89, 0.3);
+    box-shadow: 0 2px 10px rgba(74, 124, 89, 0.1);
 }
 
 .subsection-image {
@@ -173,6 +203,12 @@ h2 {
     border-radius: 20px;
     border: 3px solid #4a7c59;
     box-shadow: 0 5px 20px rgba(74, 124, 89, 0.3);
+}
+
+/* Horizontal image styling - same size as vertical but landscape orientation */
+.about-subsection:nth-child(3) .subsection-image img {
+    width: 280px;
+    height: 200px;
 }
 
 /* Projects Section */
